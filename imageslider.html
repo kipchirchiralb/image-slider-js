@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Slider</title>
+    <style>
+      body {
+        display: flex;
+        height: 100vh;
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+      }
+      .slider {
+        width: 400px;
+        height: 400px;
+      }
+      .slide {
+        width: 100%;
+      }
+      button {
+        margin: 20px;
+        border-radius: 50%;
+        background-color: aliceblue;
+        font-size: 50px;
+        width: 60px;
+      }
+      .hide {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="left-slide">&lt;</button>
+
+    <div class="slider">
+      <img src="./android-poster.jpg" class="slide hide" alt="" />
+      <img src="./graphics-poster.jpg" class="slide hide" alt="" />
+      <img src="./kids-poster.jpg" class="slide" alt="" />
+      <img src="./web-poster.jpg" class="slide hide" alt="" />
+      <img src="./1.jpg" class="slide hide" alt="" />
+      <img src="./4.jpg" class="slide hide" alt="" />
+    </div>
+
+    <button class="right-slide">&gt;</button>
+
+    <script src="./imageslider.js"></script>
+  </body>
+</html>
