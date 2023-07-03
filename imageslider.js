@@ -30,3 +30,14 @@ leftBtn.addEventListener("click", () => {
   visisibleSlideIndex = nextSlide;
   slides[visisibleSlideIndex].classList.remove("hide");
 });
+
+rightBtn.addEventListener("click", () => {
+  hideAllSlides();
+  let nextSlide = visisibleSlideIndex + 1;
+  if (visisibleSlideIndex == slides.length - 1) {
+    nextSlide = 0;
+  }
+  console.log(nextSlide);
+  visisibleSlideIndex = nextSlide;
+  slides[visisibleSlideIndex].classList.remove("hide");
+});
